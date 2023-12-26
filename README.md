@@ -39,24 +39,24 @@ rainny-alert/
 # 디스코드 챗봇 설정은 self
 ``` 2023.12.26 작성 기준```
 
-1. Applications(https://wwww.discord.com/developers/applications) 접속
-1-1. 우상단 New Application 버튼 선택
-1-2. 이름 지정 & 약관 동의 
+1. Applications(https://wwww.discord.com/developers/applications) 접속  
+1-1. 우상단 New Application 버튼 선택  
+1-2. 이름 지정 & 약관 동의   
 
-2. Applications 하단 my Applications에서 생성된 application 선택
+2. Applications 하단 my Applications에서 생성된 application 선택  
 
-3. 좌측 Bot 메뉴 선택 후 token 정보 복사  --> ridiInfo.py / token
-- 1회만 발급되고 잃어버리는 경우, 재발급해서 사용해야 하니 주의
-3-1. ``` MESSAGE CONTENT INTENT``` 활성화
-3-2. Save changes 버튼 선택
+3. 좌측 Bot 메뉴 선택 후 token 정보 복사  --> ridiInfo.py / token  
+- 1회만 발급되고 잃어버리는 경우, 재발급해서 사용해야 하니 주의  
+3-1. ``` MESSAGE CONTENT INTENT``` 활성화  
+3-2. Save changes 버튼 선택  
 
-4. 좌측 OAuth2 메뉴 선택 후 하위의 URL Generator 메뉴 선택
-4-1. SCOPES에서 ```bot``` 활성화
-4-2. BOT PERMISSION에서 TEXT PERMISSIONS > ```Send Messages``` 활성화
-4-3. 생성된 GENERATED URL 확인
-4-4. 생성된 GENERATED URL 실행
+4. 좌측 OAuth2 메뉴 선택 후 하위의 URL Generator 메뉴 선택  
+4-1. SCOPES에서 ```bot``` 활성화  
+4-2. BOT PERMISSION에서 TEXT PERMISSIONS > ```Send Messages``` 활성화  
+4-3. 생성된 GENERATED URL 확인  
+4-4. 생성된 GENERATED URL 실행  
 
-5. IMPORT할 서버 선택
-5-1. 서버 내 실행시킬 채널 선택
-5-2. 해당 채널 이름 위에 마우스를 두고 우클릭 실행
-5-3. 채널 ID 복사하기 실행 --> ridiInfo.py / channelID
+5. IMPORT할 서버 선택  
+5-1. 서버 내 실행시킬 채널 선택  
+5-2. 해당 채널 이름 위에 마우스를 두고 우클릭 실행  
+5-3. 채널 ID 복사하기 실행 --> ridiInfo.py / channelID  
