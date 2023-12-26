@@ -1,0 +1,4 @@
+discord
+asyncio
+beautifulsoup4
+requests
