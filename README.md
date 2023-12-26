@@ -5,6 +5,16 @@ created by @jeeeeehnmin
 & chatGPT의 도움 조금
 
 
+### 크롤링하는 웹페이지 정보
+- 크롤링한 웹페이지의 날씨 데이터는 table 형식으로 되어 있으며 시간대별로 값이 노출되고 있음
+- table에서 비가 오는지 여부에 따라 문자의 color로 구분되어 있으며 이는 css의 특정 값으로 나타남
+    - red로 표기되면, 비가 오지 않음
+    - blue로 표기되면, 비가 옴
+
+- 혹시나 이 소스를 사용하려는 사람이 있다면 ridiRequest.py 파일을 크롤링하려는 웹페이지의 구조에 맞게 수정해야 함
+
+
+
 # 설정
 ## 버전 정보
 - UBUNTU 22.04.3 LTS
@@ -20,16 +30,15 @@ pip install -r requirements.txt
 ## 디렉토리 구조
 ```
 rainny-alert/
-├─── alertLog/       # .gitignore에 포함되어 있음
+├─── alertLog/           # .gitignore에 포함되어 있음
 ├─── .gitignore
 ├─── README.md
-├─── requirement.txt # 파이썬 패키지 파일 설치
-├─── ridiAlert.py    # discord에 메시지 전송 수행
-├─── ridiAlert.sh    # ridiAlert.py 파일 실행 및 로그 설정
-├─── ridiInfo.py     # token, channelID, 크롤링할 웹페이지 URL / .gitignore에 포함되어 있음
-└─── ridiRequest.py  # BeautifulSoup을 사용해서 HTML 파싱 및 데이터 추출
-
-
+├─── requirement.txt     # 파이썬 패키지 파일 설치
+├─── ridiAlert.py        # discord에 메시지 전송 수행
+├─── ridiAlert.sh        # ridiAlert.py 파일 실행 및 로그 설정
+├─── ridiInfo.py         # token, channelID, 크롤링할 웹페이지 URL / .gitignore에 포함되어 있음
+├─── ridiRequest.py      # BeautifulSoup을 사용해서 HTML 파싱 및 데이터 추출
+└─── sample_ridiInfo.py  # token, channelID, 크롤링할 웹페이지 URL 정보를 등록하는 파일로 실제 파일 사용 시, 'sample_' 삭제 후 로컬에 등록하여 사용
 
 
 ```
