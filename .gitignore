@@ -1,4 +1,7 @@
+.git/*
 alertLog/*
 backup/*
 ridiInfo.py
 *Test.py
+.env
+.ridiAlert.sh
